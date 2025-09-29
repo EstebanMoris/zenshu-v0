@@ -1,0 +1,259 @@
+body {
+    font-family: "Sansation", sans-serif;;
+    background-color: rgb(204, 203, 203);
+    min-height: 100vh;
+    flex-direction: column;
+    flex: auto;
+    margin: 2rem;
+}
+
+
+                                                /** HEADER **/
+
+
+header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 1rem; 
+}
+
+.logo { 
+    height: 12rem;
+    margin: 1rem;
+}
+
+.typo { 
+    height: 6rem;
+}
+
+.slogan { 
+    text-align: left;
+    font-size: 1.5rem;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoslogan {
+    display: flex;
+    flex-direction: column;
+}
+
+.connectbutton {
+    display: flex;
+    max-width: 14rem;
+    width: 13rem;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+}
+
+.fulllogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 15%;
+    align-items: center;
+}
+
+.toptitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.titlenav { 
+        padding: 0 1rem;
+}
+
+
+                                            /** BARRE DE NAVIGATION **/
+
+.navbar {
+    font-size: 1.8rem;
+    display: flex;
+    gap: 0.2rem;
+    background-color: #999;
+    border-radius: 20px;
+    align-items: center ;
+    width: fit-content;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(77, 76, 76);
+    padding: 0 1rem;
+    margin: 0.7rem 0.2rem 0.5rem 0.2rem;
+}
+
+.separateurheader {
+    height: 0px;
+    box-shadow: 1px 1px 10px rgb(122, 94, 94);
+    border: 0;
+    margin-top: 25px;
+    border-top: 1px solid rgb(138, 90, 90);    
+
+}
+
+.seperateurnav {
+    border: none;
+    border-left: 1px solid #555;
+    height: 1em;
+    margin: 0 1rem;
+}
+
+                                            /** BANDEAU DE CITATIONS **/ 
+
+
+.citations {
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 0  1rem;
+
+
+}
+.citations span {
+
+    margin: 2rem;
+
+    
+}
+
+
+
+.deroulant {      
+    background-color: #c2b5b5;
+    padding: 1em;
+    margin-top: 2em;
+    border: 0.1px solid #ccc;
+    gap: 1rem;
+    box-shadow: 1px 1px 10px rgb(122, 94, 94);   
+    align-items: center;   
+    overflow: hidden;
+    max-width: 75% ;
+    border-radius: 10px;
+    
+}
+
+.defile {
+    display: inline-block;
+    animation: defilement 30s linear infinite;  
+}
+
+@keyframes defilement {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+                                                        /* MAIN */
+
+main {
+    display: flex;
+    flex: 1;
+    padding: 0 0 1rem 1rem ;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+                                                        /** TABLEAUX **/
+
+.contenuacceuil {
+    display: flex;
+    background-color: rgba(194, 181, 181, 0.5); 
+    margin: 2rem;
+    min-height: 250px;
+    min-width: 500px;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 0 25px grey;
+    flex-direction: row;
+}
+
+.tableauvertical {
+    background-color: rgba(194, 181, 181, 0.5); 
+    margin: 2rem;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 0 25px grey;
+}
+
+.dernieruser {
+    background-color: rgb(201, 201, 201); 
+    margin: 2rem;
+    min-height: 500px;
+    width: 350px;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 0 25px grey;
+}
+
+.mangaaleatoire {
+    background-color:rgb(201, 201, 201); 
+    margin: 2rem;
+    min-height: 500px;
+    width: 350px;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 0 25px grey;
+}
+
+.tableauhorizontal {
+    background-color: rgba(194, 181, 181, 0.5); 
+    margin: 2rem;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 0 25px grey;
+}
+
+.derniermanga {
+    background-color: rgb(201, 201, 201);
+    margin: 2rem;
+    min-height: 300px;
+    min-width: 700px;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 0 25px grey;
+
+}
+
+.dernierauteur {
+    background-color: rgb(201, 201, 201);
+    margin: 2rem;
+    min-height: 300px;
+    min-width: 700px;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 0 25px grey;
+}
+.derniertome {
+    background-color: rgb(201, 201, 201);
+    margin: 2rem;
+    min-height: 250px;
+    min-width: 700px;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 0 25px grey;
+}
+
+                                                        /* BAS DE PAGE */
+
+footer {
+    display: flex;   
+    background-color: rgb(184, 184, 184);
+    align-items: center;
+    justify-content: center;
+}
+
+.credit { 
+    font-size: 1rem;
+    opacity: 75%;
+    color: black;
+
+}
